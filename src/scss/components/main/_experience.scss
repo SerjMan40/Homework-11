@@ -1,0 +1,39 @@
+@use "presets/" as *;
+.experience {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 108px 0 88px;
+  @media (max-width: 576px) {
+    padding: 65px 0px 65px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $gap;
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+}
+.experience-item {
+  display: flex;
+  gap: $gap;
+
+  &__drscription {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  &__number {
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
+  &__text {
+    line-height: $line-height-lg;
+    margin-top: -5px;
+  }
+  &__image {
+    order: -1;
+  }
+}

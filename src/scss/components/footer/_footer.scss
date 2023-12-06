@@ -1,0 +1,19 @@
+@use "presets/" as *;
+.footer {
+  min-height: 150px;
+  background-color: $color-primary;
+  padding: 40px 0;
+  color: $color-white;
+  padding-bottom: 50px;
+  &__name {
+    margin: 0 0 20px 0;
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
+  &__copyright {
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: $line-height-lg;
+  }
+}

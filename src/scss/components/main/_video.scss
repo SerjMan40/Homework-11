@@ -1,0 +1,19 @@
+@use "presets/" as *;
+.video {
+  padding-bottom: 100px;
+  background-color: &color-light;
+  &__iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+    @media (max-width: 992px) {
+      height: 500px;
+    }
+    @media (max-width: 768px) {
+      height: 400px;
+    }
+    @media (max-width: 576px) {
+      height: 250px;
+    }
+  }
+}
